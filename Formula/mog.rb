@@ -1,8 +1,8 @@
 class Mog < Formula
   desc "Locks your Mac when someone else looks at it"
   homepage "https://github.com/c4rb0nx1/mog"
-  url "https://github.com/c4rb0nx1/mog/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "e0d386a95ec2002676b6911a7a392c9a7f450115f406d3ca032917cea46be2d4"
+  url "https://github.com/c4rb0nx1/mog/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "dfb57e9789c17d2d9fb2784b9429926fc311de28152ec94c0b17c394991134ca"
   license "Apache-2.0"
 
   depends_on arch: :arm64
@@ -18,6 +18,7 @@ class Mog < Formula
     system "swift", "build", *std_swift_args, "-c", "release", "--product", "mog"
     system "swift", "build", *std_swift_args, "-c", "release", "--product", "MogBar"
     bin.install ".build/release/mog", ".build/release/MogBar"
+    pkgshare.install "Assets/AppIcon.icns"
 
     resource("face-model").stage do
       package = Pathname.pwd/"FaceEmbedding.mlpackage"
@@ -43,5 +44,6 @@ class Mog < Formula
     assert_match "embedding size 512", shell_output("#{bin}/mog selftest")
     system bin/"mog", "install-app", "--dir", testpath
     assert_path_exists testpath/"Mog.app/Contents/MacOS/Mog"
+    assert_path_exists testpath/"Mog.app/Contents/Resources/AppIcon.icns"
   end
 end
