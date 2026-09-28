@@ -1,8 +1,8 @@
 class Mog < Formula
   desc "Locks your Mac when someone else looks at it"
   homepage "https://github.com/c4rb0nx1/mog"
-  url "https://github.com/c4rb0nx1/mog/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "dfb57e9789c17d2d9fb2784b9429926fc311de28152ec94c0b17c394991134ca"
+  url "https://github.com/c4rb0nx1/mog/archive/refs/tags/v0.2.0.tar.gz"
+  sha256 "45697851ce9383dc641ef484f9fd866feea36690b6ef66162d35ae32d1b61386"
   license "Apache-2.0"
 
   depends_on arch: :arm64
@@ -31,6 +31,7 @@ class Mog < Formula
     <<~EOS
       Menu-bar app:
         mog install-app      # puts Mog.app in ~/Applications
+                             # (run it again after each `brew upgrade mog`)
       Command line:
         mog enroll && mog test && mog watch
 
