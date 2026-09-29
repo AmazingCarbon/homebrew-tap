@@ -1,7 +1,7 @@
-# c4rb0nx1 Homebrew Tap
+# AmazingCarbon Homebrew Tap
 
 ```sh
-brew tap c4rb0nx1/tap
+brew tap c4rb0nx1/tap https://github.com/AmazingCarbon/homebrew-tap
 brew install memlane
 brew install mog
 ```
