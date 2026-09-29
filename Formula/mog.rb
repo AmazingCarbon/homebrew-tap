@@ -1,8 +1,8 @@
 class Mog < Formula
   desc "Locks your Mac when someone else looks at it"
   homepage "https://github.com/c4rb0nx1/mog"
-  url "https://github.com/c4rb0nx1/mog/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "e24813312f0d7c7f351561f8136b863f8ef34b40dede04ab6268a8857b33bc9a"
+  url "https://github.com/c4rb0nx1/mog/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "6d96e32a63eb298d2e479beeafc22ab29b5a6cfd7e080b4a6424674674bb6afc"
   license "Apache-2.0"
 
   depends_on arch: :arm64
