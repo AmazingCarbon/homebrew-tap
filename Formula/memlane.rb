@@ -1,7 +1,7 @@
 class Memlane < Formula
   desc "MCP memory server for AI agents"
-  homepage "https://github.com/c4rb0nx1/memlane"
-  url "https://github.com/c4rb0nx1/memlane/archive/refs/tags/v0.1.1.tar.gz"
+  homepage "https://github.com/AmazingCarbon/memlane"
+  url "https://github.com/AmazingCarbon/memlane/archive/refs/tags/v0.1.1.tar.gz"
   sha256 "dc38229200cf7a3aed2a4f8e6a9db40abe64ad6a1f8210e5e3155c5a772b5d54"
   license "MIT"
 
